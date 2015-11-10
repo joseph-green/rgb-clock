@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src='app.js'></script>
+</head>
+<body ng-app='RGBclock'>
+	
+	<div ng-controller='clockcontroller' class='main'>
+		<h1>Colour Clock:</h1>
+		<p>{{ bruh | date:'mediumDate' }}</p>
+		<p><span id='hexcode'>{{ hexval }}</span>     <span id='timecode'>{{ bruh | date:'mediumTime' }}</span></p>
+		<button id='time'>Time</button>
+		<button id='hex'>Hexidecimal</button>
+		
+
+
+		
+
+	</div>
+</body>
+</html>
